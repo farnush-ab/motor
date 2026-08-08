@@ -596,6 +596,14 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 }
 .bike-card__media img,
 .bike-card__media svg { width: 100%; height: 100%; object-fit: cover; }
+/* پرده‌ی ملایم روی تصویر تا عکس‌های با پس‌زمینه‌ی روشن و تیره کنار هم یکدست دیده شوند */
+.bike-card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 11, 13, 0.06), rgba(11, 11, 13, 0.5));
+  pointer-events: none;
+}
 .bike-card__tag {
   position: absolute;
   top: 12px;
