@@ -126,8 +126,8 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
   text-wrap: balance;
 }
-h1 { font-size: clamp(1.8rem, 1.15rem + 2.2vw, 2.85rem); line-height: 1.35; }
-h2 { font-size: clamp(1.4rem, 1.08rem + 1.3vw, 2.05rem); }
+h1 { font-size: clamp(1.62rem, 1.1rem + 2.2vw, 2.85rem); line-height: 1.35; }
+h2 { font-size: clamp(1.3rem, 1.02rem + 1.3vw, 2.05rem); }
 h3 { font-size: clamp(1rem, 0.95rem + 0.3vw, 1.14rem); }
 p { margin: 0 0 1em; color: var(--text-2); }
 
@@ -162,10 +162,13 @@ ul, ol { padding-inline-start: 1.2em; margin: 0 0 1em; }
 .skip-link:focus { transform: none; }
 
 .container {
-  width: min(100% - 32px, var(--container));
+  width: min(100% - 36px, var(--container));
   margin-inline: auto;
 }
 /* هرچه صفحه پهن‌تر، فضای خالی دو طرف بیشتر */
+@media (min-width: 360px) {
+  .container { width: min(100% - 48px, var(--container)); }
+}
 @media (min-width: 700px) {
   .container { width: min(100% - 64px, var(--container)); }
 }
@@ -239,9 +242,9 @@ ul, ol { padding-inline-start: 1.2em; margin: 0 0 1em; }
 }
 
 /* بخش‌ها */
-.section { padding: clamp(52px, 5.6vw, 84px) 0; position: relative; }
+.section { padding: clamp(44px, 5.6vw, 84px) 0; position: relative; }
 .section--alt { background: var(--bg-alt); }
-.section-head { text-align: center; max-width: 660px; margin: 0 auto 42px; }
+.section-head { text-align: center; max-width: 660px; margin: 0 auto clamp(30px, 4vw, 42px); }
 .section-head p { color: var(--muted); margin: 0; }
 .section-head h2 { margin-bottom: 12px; }
 .section-head--start { text-align: start; margin-inline: 0; }
@@ -422,7 +425,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 /* قهرمان (Hero) */
 .hero {
   position: relative;
-  padding: clamp(44px, 4.6vw, 72px) 0 clamp(48px, 5.4vw, 78px);
+  padding: clamp(36px, 4.6vw, 72px) 0 clamp(40px, 5.4vw, 78px);
   overflow: hidden;
   background:
     radial-gradient(60% 90% at 85% 10%, rgba(224, 30, 43, 0.16), transparent 60%),
@@ -958,7 +961,7 @@ table.pricing td:last-child { color: var(--brand-2); font-weight: 700; white-spa
     inset: var(--header-h) 0 auto;
     background: var(--bg-alt);
     border-bottom: 1px solid var(--line);
-    padding: 12px 20px 22px;
+    padding: 12px 24px 22px;
     max-height: calc(100vh - var(--header-h));
     overflow-y: auto;
     transform: translateY(-12px);
@@ -988,7 +991,7 @@ table.pricing td:last-child { color: var(--brand-2); font-weight: 700; white-spa
     bottom: 0;
     z-index: 95;
     gap: 10px;
-    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    padding: 10px 18px calc(10px + env(safe-area-inset-bottom));
     background: rgba(10, 10, 12, 0.94);
     backdrop-filter: blur(12px);
     border-top: 1px solid var(--line);
@@ -999,7 +1002,15 @@ table.pricing td:last-child { color: var(--brand-2); font-weight: 700; white-spa
 }
 
 @media (max-width: 620px) {
+  .grid { gap: 16px; }
   .grid-3, .grid-4, .grid-6 { grid-template-columns: 1fr; }
+  .card { padding: 22px 20px; }
+  .hero__badges { gap: 10px; margin: 24px 0; }
+  .hero__badges li { padding: 12px 8px; }
+  .split { gap: 24px; }
+  .callout { padding: 26px 20px; }
+  .faq__q { padding: 17px 18px; font-size: .95rem; }
+  .faq__a p { padding: 0 18px 18px; }
   .steps { grid-template-columns: 1fr; gap: 22px; text-align: start; }
   .step { display: grid; grid-template-columns: 66px 1fr; gap: 16px; text-align: start; align-items: center; }
   .step__badge { margin: 0; }
