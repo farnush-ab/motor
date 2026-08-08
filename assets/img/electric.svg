@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="بررسی سیستم برق و باتری موتورسیکلت">
+  <defs>
+    <linearGradient id="eBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17171d"/>
+      <stop offset="1" stop-color="#0b0b0e"/>
+    </linearGradient>
+    <radialGradient id="eGlow" cx="30%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#e01e2b" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#e01e2b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="560" fill="url(#eBg)"/>
+  <rect width="720" height="560" fill="url(#eGlow)"/>
+  <g stroke="#ffffff" stroke-opacity=".04" stroke-width="2">
+    <path d="M0 140H720M0 280H720M0 420H720M180 0V560M360 0V560M540 0V560"/>
+  </g>
+
+  <!-- باتری -->
+  <g transform="translate(96,150)">
+    <rect x="0" y="0" width="230" height="170" rx="18" fill="#1b1b22" stroke="#33333f" stroke-width="2"/>
+    <rect x="34" y="-16" width="44" height="20" rx="6" fill="#55556a"/>
+    <rect x="152" y="-16" width="44" height="20" rx="6" fill="#55556a"/>
+    <text x="56" y="-24" text-anchor="middle" font-family="Vazirmatn, Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#8e8e9a">+</text>
+    <text x="174" y="-24" text-anchor="middle" font-family="Vazirmatn, Tahoma, sans-serif" font-size="22" font-weight="bold" fill="#8e8e9a">−</text>
+
+    <rect x="24" y="112" width="182" height="26" rx="13" fill="#26262e"/>
+    <rect x="24" y="112" width="150" height="26" rx="13" fill="#2fbf71" opacity=".85"/>
+
+    <path d="M126 26l-34 52h28l-8 44 38-56h-28l4-40Z" fill="#e01e2b"/>
+    <text x="115" y="160" text-anchor="middle" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" fill="#8e8e9a">۱۲٫۶ ولت</text>
+  </g>
+
+  <!-- مولتی‌متر -->
+  <g transform="translate(408,120)">
+    <rect x="0" y="0" width="216" height="270" rx="22" fill="#1b1b22" stroke="#33333f" stroke-width="2"/>
+    <rect x="24" y="26" width="168" height="76" rx="12" fill="#0d0d11" stroke="#2b2b35"/>
+    <text x="108" y="80" text-anchor="middle" font-family="Vazirmatn, Tahoma, sans-serif" font-size="38" font-weight="bold" fill="#2fbf71">۱۴٫۲</text>
+    <circle cx="108" cy="168" r="42" fill="#26262e" stroke="#3d3d4a" stroke-width="2"/>
+    <path d="M108 168l24-26" stroke="#e01e2b" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="108" cy="168" r="7" fill="#e01e2b"/>
+    <g fill="#55556a">
+      <circle cx="62" cy="238" r="9"/>
+      <circle cx="154" cy="238" r="9"/>
+    </g>
+  </g>
+
+  <!-- سیم‌های اتصال -->
+  <path d="M326 200c46 0 46 -34 82 -34" stroke="#e01e2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M326 258c46 0 46 40 82 40" stroke="#55556a" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- ردیف تست چراغ‌ها -->
+  <g transform="translate(96,400)">
+    <rect x="0" y="0" width="528" height="72" rx="16" fill="#15151b" stroke="#2b2b35" stroke-width="2"/>
+    <g transform="translate(30,36)">
+      <circle cx="0" cy="0" r="14" fill="rgba(47,191,113,.16)" stroke="#2fbf71" stroke-width="1.5"/>
+      <path d="M-6 0l4 5 8-9" stroke="#2fbf71" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="30" y="6" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" fill="#c9c9d1">چراغ‌ها</text>
+    </g>
+    <g transform="translate(200,36)">
+      <circle cx="0" cy="0" r="14" fill="rgba(47,191,113,.16)" stroke="#2fbf71" stroke-width="1.5"/>
+      <path d="M-6 0l4 5 8-9" stroke="#2fbf71" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="30" y="6" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" fill="#c9c9d1">دینام</text>
+    </g>
+    <g transform="translate(350,36)">
+      <circle cx="0" cy="0" r="14" fill="rgba(240,167,38,.16)" stroke="#f0a726" stroke-width="1.5"/>
+      <path d="M0 -6v7M0 5v.5" stroke="#f0a726" stroke-width="2.8" stroke-linecap="round"/>
+      <text x="30" y="6" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" fill="#c9c9d1">کیلومترشمار</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="تحلیل قیمت و برآورد ارزش موتورسیکلت">
+  <defs>
+    <linearGradient id="prBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17171d"/>
+      <stop offset="1" stop-color="#0b0b0e"/>
+    </linearGradient>
+    <radialGradient id="prGlow" cx="75%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#e01e2b" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#e01e2b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="prBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3d48"/>
+      <stop offset="1" stop-color="#8e1018"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="560" fill="url(#prBg)"/>
+  <rect width="720" height="560" fill="url(#prGlow)"/>
+  <g stroke="#ffffff" stroke-opacity=".04" stroke-width="2">
+    <path d="M0 140H720M0 280H720M0 420H720M180 0V560M360 0V560M540 0V560"/>
+  </g>
+
+  <!-- کارت نمودار -->
+  <g transform="translate(70,70)">
+    <rect x="0" y="0" width="500" height="330" rx="22" fill="#15151b" stroke="#2b2b35" stroke-width="2"/>
+
+    <!-- خطوط راهنما -->
+    <g stroke="#26262e" stroke-width="1.5">
+      <path d="M52 70H452M52 130H452M52 190H452M52 250H452"/>
+    </g>
+
+    <!-- میله‌ها -->
+    <g>
+      <rect x="86" y="150" width="46" height="100" rx="8" fill="#33333d"/>
+      <rect x="166" y="120" width="46" height="130" rx="8" fill="#33333d"/>
+      <rect x="246" y="96" width="46" height="154" rx="8" fill="url(#prBar)"/>
+      <rect x="326" y="140" width="46" height="110" rx="8" fill="#33333d"/>
+      <rect x="392" y="176" width="46" height="74" rx="8" fill="#33333d"/>
+    </g>
+
+    <!-- خط روند -->
+    <path d="M109 168 L189 138 L269 108 L349 154 L415 190" fill="none" stroke="#2fbf71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+    <g fill="#2fbf71">
+      <circle cx="109" cy="168" r="5"/><circle cx="189" cy="138" r="5"/>
+      <circle cx="269" cy="108" r="5"/><circle cx="349" cy="154" r="5"/>
+      <circle cx="415" cy="190" r="5"/>
+    </g>
+
+    <path d="M52 250H452" stroke="#3d3d4a" stroke-width="2"/>
+
+    <!-- عنوان کارت -->
+    <rect x="52" y="28" width="150" height="10" rx="5" fill="#4c4c5a"/>
+    <rect x="330" y="24" width="122" height="20" rx="10" fill="rgba(224,30,43,.14)" stroke="rgba(224,30,43,.35)"/>
+    <text x="391" y="39" text-anchor="middle" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" fill="#ff3d48">قیمت روز بازار</text>
+
+    <!-- برچسب پایین -->
+    <g fill="#6b6b78" font-family="Vazirmatn, Tahoma, sans-serif" font-size="13" text-anchor="middle">
+      <text x="109" y="278">۱۳۹۹</text>
+      <text x="189" y="278">۱۴۰۰</text>
+      <text x="269" y="278">۱۴۰۱</text>
+      <text x="349" y="278">۱۴۰۲</text>
+      <text x="415" y="278">۱۴۰۳</text>
+    </g>
+  </g>
+
+  <!-- برچسب قیمت شناور -->
+  <g transform="translate(430,330)">
+    <rect x="0" y="0" width="230" height="140" rx="20" fill="#1b1b22" stroke="#33333f" stroke-width="2"/>
+    <path d="M34 42h34l-8 26H26Z" fill="#e01e2b"/>
+    <circle cx="58" cy="50" r="4" fill="#1b1b22"/>
+    <text x="196" y="56" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="15" fill="#8e8e9a">برآورد منصفانه</text>
+    <text x="196" y="96" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="26" font-weight="bold" fill="#f4f4f5">۱۸۵ میلیون</text>
+    <rect x="34" y="112" width="162" height="8" rx="4" fill="#2b2b35"/>
+    <rect x="34" y="112" width="112" height="8" rx="4" fill="#2fbf71"/>
+  </g>
+</svg>
